@@ -1,0 +1,64 @@
+{
+  "name": "anon-iran",
+  "productName": "ANON-IRAN",
+  "version": "5.0.0",
+  "description": "Ethical Security Engineering Platform — 531+ Tools",
+  "main": "main.js",
+  "author": "ANON-IRAN Security",
+  "license": "MIT",
+  "scripts": {
+    "start":     "electron .",
+    "dev":       "electron . --dev",
+    "build":     "electron-builder --win --x64",
+    "build-all": "electron-builder --win --linux --x64"
+  },
+  "devDependencies": {
+    "electron":         "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId":       "com.anoniran.security",
+    "productName": "ANON-IRAN",
+    "copyright":   "ANON-IRAN Security Platform",
+    "icon":        "assets/icon",
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "assets/**/*"
+    ],
+    "extraResources": [],
+    "win": {
+      "target": [
+        { "target": "nsis",     "arch": ["x64"] },
+        { "target": "portable", "arch": ["x64"] }
+      ],
+      "icon":           "assets/icon.ico",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick":             false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName":         "ANON-IRAN",
+      "installerIcon":        "assets/icon.ico",
+      "uninstallerIcon":      "assets/icon.ico",
+      "license":              "LICENSE.txt",
+      "installerHeaderIcon":  "assets/icon.ico",
+      "displayLanguageSelector": false
+    },
+    "portable": {
+      "artifactName": "ANON-IRAN-Portable-${version}.exe"
+    },
+    "linux": {
+      "target":   ["AppImage", "deb"],
+      "icon":     "assets/icon.png",
+      "category": "Security"
+    },
+    "directories": {
+      "output": "dist",
+      "buildResources": "assets"
+    }
+  }
+}

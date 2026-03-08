@@ -1,0 +1,18 @@
+ANON-IRAN Security Platform v5.0.0
+==================================
+
+This software is provided for ethical security research and educational purposes only.
+
+By installing and using this software you agree to:
+
+1. Use this platform only on systems you own or have explicit written permission to test.
+2. Comply with all applicable laws and regulations in your jurisdiction.
+3. Not use this platform for unauthorized access, data theft, or malicious purposes.
+4. Accept full responsibility for any actions performed using this platform.
+
+All tools referenced in this platform are the property of their respective authors.
+This platform provides links and documentation to publicly available security tools.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
+For ethical use only. Misuse is the sole responsibility of the user.
